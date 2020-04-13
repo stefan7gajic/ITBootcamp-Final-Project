@@ -32,7 +32,7 @@ public class LogInTest extends LogInPage{
   @Test
 	public void logInTest() throws IOException, InterruptedException {
 	  	driver.get(LOG_URL);
-		FileInputStream fis = new FileInputStream("src/test/resources/Generated Data.xlsx");
+		FileInputStream fis = new FileInputStream("src/test/resources/GeneratedData2.xlsx");
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		Sheet sheet = wb.getSheetAt(0);
 		SoftAssert sa = new SoftAssert();
